@@ -112,7 +112,9 @@ Built to support **image captioning, visual question answering (VQA), change det
 
 
 GEMINI_API_KEY=your_google_gemini_api_key
+
 🔍 How to Check Environment Variables
+
 Render → Service → Environment → Environment Variables
 
 Firebase Studio AI → Project Settings → Secrets
@@ -122,28 +124,47 @@ Local → .env file or echo $GEMINI_API_KEY
 ✅ Only Gemini API Key is used
 
 ## 🧩 Project Structure (High-Level)
+
 studio/
+
 ├── src/
+
 │   ├── app/
+
 │   │   ├── dashboard/
+
 │   │   └── page.tsx
+
 │   ├── components/
+
 │   ├── ai/
+
 │   └── hooks/
+
 ├── public/
+
 ├── package.json
+
 ├── next.config.js
+
 └── README.md
 
 ## 🚀 Local Setup (Optional)
+
 git clone https://github.com/SaiPriya0606/studio.git
+
 cd studio
+
 npm install
+
 export GEMINI_API_KEY=your_api_key
+
 npm run dev
+
 Open 👉 http://localhost:3000
 
 ##  🔐 Reviewer Transparency
+
 Firebase Studio AI was used only as a development environment
 
 No Firebase dependency in production runtime
@@ -158,12 +179,15 @@ API key usage is standard and configurable
 
 ### 
 👨‍💻 Author
+
 G. Sai Priya
 
 🔗 GitHub: https://github.com/SaiPriya0606
+
 🌐 Deployment: https://studio-979o.onrender.com
 
 ⭐ If you liked this project, don’t forget to star the repository!
 
 📄 License
+
 This project is licensed under the MIT License.
