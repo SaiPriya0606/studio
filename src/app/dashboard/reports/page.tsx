@@ -10,7 +10,7 @@ import { Loader2, FileText, Printer, Share2 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 export default function ReportsPage() {
-  const [geoData, setGeoData] = setGeoData("");
+  const [geoData, setGeoData] = useState<string>("");
   const [reasoning, setReasoning] = useState<string>("");
   const [finalReport, setFinalReport] = useState<string>("");
   const [loading, setLoading] = useState(false);
@@ -133,8 +133,4 @@ export default function ReportsPage() {
       </div>
     </DashboardLayout>
   );
-}
-
-function setGeoData(arg0: string): [any, any] {
-  throw new Error("Function not implemented.");
 }
