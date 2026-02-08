@@ -130,7 +130,7 @@ npm run dev
 
 Application available at: http://localhost:3000
 
-🔍 Environment Variables
+### 🔍 Environment Variables
 
 GEMINI_API_KEY=your_google_gemini_api_key
 
@@ -144,7 +144,7 @@ Local → .env file or echo $GEMINI_API_KEY
 
 ✅ Only Gemini API Key is used
 
-🧩 Project Structure
+## 🧩 Project Structure
 
 studio/
 
@@ -170,7 +170,7 @@ studio/
 
 └── README.md
 
-🚀 Local Setup (Optional)
+### 🚀 Local Setup (Optional)
 
 git clone https://github.com/SaiPriya0606/studio.git
 
@@ -184,7 +184,7 @@ npm run dev
 
 Open: http://localhost:3000
 
-📖 Methodology
+### 📖 Methodology
 
 The core of our project is a lightweight projection-based alignment between a pre-trained SigLIP vision encoder and the frozen GPT-OSS language model.
 
@@ -196,7 +196,7 @@ Instruction-Tuning: On conversational image-text datasets using a cross-entropy 
 
 This approach is highly efficient and preserves the base model's knowledge. Due to computational constraints, the full GPT-OSS model training is demonstrated via reproducible scripts, while the live web application uses a cloud-hosted multimodal API for inference.
 
-📊 Results
+### 📊 Results
 
 VQAv2 Accuracy: Up to 87.3%
 
@@ -208,7 +208,7 @@ Land-Cover Classification: Up to 15% improvement over CNN baseline
 
 Change Detection: 0.78 IoU with natural language explanations
 
-🤝 Contributing
+### 🤝 Contributing
 
 We welcome contributions! Please submit a Pull Request. For major changes, open an issue first to discuss.
 
