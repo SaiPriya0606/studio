@@ -111,17 +111,27 @@ An AI-powered multimodal system that augments OpenAI GPT-OSS with vision underst
 - A Google Gemini API Key  
 
 ### Backend Setup
+
 cd backend/
+
 npm install
+
 echo "GEMINI_API_KEY=your_google_gemini_api_key" > .env
+
 npm start
+
 Frontend Setup
+
 cd frontend/
+
 npm install
+
 npm run dev
+
 Application available at: http://localhost:3000
 
 🔍 Environment Variables
+
 GEMINI_API_KEY=your_google_gemini_api_key
 
 Sources to check environment variables:
@@ -135,27 +145,47 @@ Local → .env file or echo $GEMINI_API_KEY
 ✅ Only Gemini API Key is used
 
 🧩 Project Structure
+
 studio/
+
 ├── src/
+
 │   ├── app/
+
 │   │   ├── dashboard/
+
 │   │   └── page.tsx
+
 │   ├── components/
+
 │   ├── ai/
+
 │   └── hooks/
+
 ├── public/
+
 ├── package.json
+
 ├── next.config.js
+
 └── README.md
+
 🚀 Local Setup (Optional)
+
 git clone https://github.com/SaiPriya0606/studio.git
+
 cd studio
+
 npm install
+
 export GEMINI_API_KEY=your_api_key
+
 npm run dev
+
 Open: http://localhost:3000
 
 📖 Methodology
+
 The core of our project is a lightweight projection-based alignment between a pre-trained SigLIP vision encoder and the frozen GPT-OSS language model.
 
 Training Stages:
@@ -167,6 +197,7 @@ Instruction-Tuning: On conversational image-text datasets using a cross-entropy 
 This approach is highly efficient and preserves the base model's knowledge. Due to computational constraints, the full GPT-OSS model training is demonstrated via reproducible scripts, while the live web application uses a cloud-hosted multimodal API for inference.
 
 📊 Results
+
 VQAv2 Accuracy: Up to 87.3%
 
 COCO BLEU-4: ~82.1%
@@ -178,12 +209,15 @@ Land-Cover Classification: Up to 15% improvement over CNN baseline
 Change Detection: 0.78 IoU with natural language explanations
 
 🤝 Contributing
+
 We welcome contributions! Please submit a Pull Request. For major changes, open an issue first to discuss.
 
 Authors: G. Sai Priya
+
 License: MIT License
 
 Links:
+
 GitHub repository: https://github.com/SaiPriya0606
 
 Render deployment: https://studio-979o.onrender.com
