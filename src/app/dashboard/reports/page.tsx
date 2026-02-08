@@ -15,10 +15,12 @@ export default function ReportsPage() {
   const [finalReport, setFinalReport] = useState<string>("");
   const [loading, setLoading] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const [formattedDate, setFormattedDate] = useState<string>("");
   const { toast } = useToast();
 
   useEffect(() => {
     setMounted(true);
+    setFormattedDate(new Date().toLocaleDateString());
   }, []);
 
   const handleGenerate = async () => {
@@ -41,14 +43,12 @@ export default function ReportsPage() {
     }
   };
 
-  const formattedDate = mounted ? new Date().toLocaleDateString() : '';
-
   return (
     <DashboardLayout>
       <div className="max-w-6xl space-y-8">
         <div className="flex justify-between items-center">
           <div>
-            <h2 className="text-3xl font-bold font-headline mb-2">Scientific Report Synthesizer</h2>
+            <h2 className="text-3xl font-bold font-headline mb-2 text-primary">Scientific Report Synthesizer</h2>
             <p className="text-muted-foreground">Combine raw spatial analytics with AI reasoning to produce executive-level documentation.</p>
           </div>
           <div className="flex gap-2">
