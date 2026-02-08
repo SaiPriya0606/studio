@@ -15,12 +15,10 @@ export default function ReportsPage() {
   const [finalReport, setFinalReport] = useState<string>("");
   const [loading, setLoading] = useState(false);
   const [mounted, setMounted] = useState(false);
-  const [formattedDate, setFormattedDate] = useState<string>("");
   const { toast } = useToast();
 
   useEffect(() => {
     setMounted(true);
-    setFormattedDate(new Date().toLocaleDateString());
   }, []);
 
   const handleGenerate = async () => {
@@ -42,6 +40,8 @@ export default function ReportsPage() {
       setLoading(false);
     }
   };
+
+  const formattedDate = mounted ? new Date().toLocaleDateString() : '';
 
   return (
     <DashboardLayout>
