@@ -1,8 +1,9 @@
 import { DashboardLayout } from "@/components/layout/dashboard-layout";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Camera, MessageSquare, Globe, Activity, FileText, ArrowRight } from "lucide-react";
+import { Camera, MessageSquare, Globe, FileText } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 export default function DashboardPage() {
   const stats = [
@@ -96,8 +97,4 @@ export default function DashboardPage() {
       </div>
     </DashboardLayout>
   );
-}
-
-function cn(...classes: string[]) {
-  return classes.filter(Boolean).join(" ");
 }

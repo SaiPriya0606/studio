@@ -2,9 +2,10 @@
 
 import { DashboardLayout } from "@/components/layout/dashboard-layout";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Globe, Layers, History, Search, FileText, ArrowRight } from "lucide-react";
+import { Globe, Layers, History, Search, ArrowRight, Orbit } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 export default function EOAnalysisHub() {
   const tools = [
@@ -105,8 +106,4 @@ export default function EOAnalysisHub() {
       </div>
     </DashboardLayout>
   );
-}
-
-function cn(...classes: string[]) {
-  return classes.filter(Boolean).join(" ");
 }
