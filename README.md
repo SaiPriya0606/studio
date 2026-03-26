@@ -7,8 +7,7 @@ An AI-powered multimodal system that augments OpenAI GPT-OSS with vision underst
 
 ---
 
-## 🔴 Live Demo & Repository
-- 🌐 **Deployment:** [https://studio-979o.onrender.com](https://studio-979o.onrender.com)  
+## 🔴 Repository
 - 📦 **GitHub Repository:** [https://github.com/SaiPriya0606/studio](https://github.com/SaiPriya0606/studio)
 
 ---
@@ -219,7 +218,5 @@ License: MIT License
 Links:
 
 GitHub repository: https://github.com/SaiPriya0606
-
-Render deployment: https://studio-979o.onrender.com
 
 ⭐ If you liked this project, don't forget to star the repository!
